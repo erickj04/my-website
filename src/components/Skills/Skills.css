@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    width: 30vw;
+    border: '1vw solid black';
+}
+
+.title {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.box-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.5vw;
+    width: 100%;
+}
+
+.language-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.idk {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item-title {
+    margin-left: 2vw;
+}

@@ -1,0 +1,43 @@
+.nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1000;
+	height: auto;
+}
+
+.navbar-menu {
+	display: block;
+	height: auto;
+}
+
+.nav-toolbar {
+	box-sizing: border-box;
+	display: flex;
+	background-color: rgb(255, 255, 255);
+	color: black;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 22.5px;
+	text-transform: uppercase;
+}
+
+.nav-links{
+	color: black;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.nav-links.active {
+	color: blue;
+	font-weight: bold;
+}
+
+.nav-rendered-links {
+	display: flex;
+	gap: 4vw;
+	align-items: center;
+}

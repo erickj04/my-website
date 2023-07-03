@@ -1,0 +1,19 @@
+.About_me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12vw;
+    margin-top: 12vh;
+}
+
+.about_me-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.description-container {
+    width: 30vw;
+    padding-top: 2vw;
+}

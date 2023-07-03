@@ -1,0 +1,46 @@
+.Home {
+    margin-top: 10vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 85vh;
+    width: 100%;
+}
+
+.home-header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+
+.name {
+    text-align: center;
+    font-size: 3vw;
+}
+
+.slogan {
+    font-size: 2vw;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    margin-bottom: 2vh;
+}
+
+.contacts-title {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.contact-links {
+    display: flex;
+    gap: 5vw;
+}
