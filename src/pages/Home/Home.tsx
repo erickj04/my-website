@@ -6,17 +6,6 @@ import CONTACT_LINKS from '../../statics/Links';
 import { motion } from 'framer-motion';
 import './Home.css';
 
-const contactVariants = {
-    hover: {
-        y: -10,
-        transition: {
-            repeatDelay: 1,
-            repeat: Infinity,
-            repeatType: "reverse",
-            type: "spring",
-        }
-    }
-}
 
 const Home: React.FC<{}> = () => {
 
