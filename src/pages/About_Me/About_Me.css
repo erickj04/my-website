@@ -17,3 +17,8 @@
     width: 30vw;
     padding-top: 2vw;
 }
+
+.content {
+    display: flex;
+    gap: 5vw;
+}

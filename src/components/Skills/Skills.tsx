@@ -6,8 +6,7 @@ import {
     Box,
     List,
     CircularProgressProps,
-    CircularProgress,
-    ListItem
+    CircularProgress
  } from '@mui/material';
 import { 
     ExpandMore
