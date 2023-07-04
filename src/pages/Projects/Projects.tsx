@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { Carousel } from '@mantine/carousel';
 import './Projects.css';
 import PCA from '../../statics/images/PCA.png';
-import Limited_Move from '../../statics/images/Limited-Move.png'
-import Cybercision from '../../statics/images/Cybercision.png'
+import Limited_Move from '../../statics/images/Limited-Move.png';
+import Cybercision from '../../statics/images/Cybercision.png';
+import File_Sharing from '../../statics/images/File-sharing.png';
+import Rollingstep from '../../statics/images/Rollingstep.png'
 import { motion } from 'framer-motion';
 import { createStyles, getStylesRef } from '@mantine/core';
 import { Modal } from '@mui/material';
@@ -68,12 +70,12 @@ const Slide: React.FC<SlideInterface> =
                         <div className="slider-topic">Tools:</div>
                         <div>{props.tools}</div>
                         {
-                                props.framework &&
-                                <div>
-                                    <div className="slider-topic">Frameworks: </div>
-                                    <div>{props.framework}</div>
-                                </div>
-                            }
+                            props.framework &&
+                            <div className="slider-right-min">
+                                <div className="slider-topic">Frameworks: </div>
+                                <div>{props.framework}</div>
+                            </div>
+                        }
                     </div>
                 </div>
             </motion.div>
@@ -100,14 +102,14 @@ const Slide: React.FC<SlideInterface> =
                             <div>{props.language}</div>
                             {
                                 props.tools &&
-                                <div>
+                                <div className="slider-right">
                                     <div className="slider-topic">Tools: </div>
                                     <div>{props.tools}</div>
                                 </div>
                             }
                             {
                                 props.framework &&
-                                <div>
+                                <div className="slider-right">
                                     <div className="slider-topic">Frameworks: </div>
                                     <div>{props.framework}</div>
                                 </div>
@@ -187,15 +189,46 @@ const Projects: React.FC<{}> = () => {
                 <Carousel.Slide>
                     <Slide 
                         title={"File Sharing"}
-                        shortDesc="its a game"
-                        longDesc="its a really good game"
+                        shortDesc="A simple file-sharing app using Firebase to store and deploy the app. It uses deno for the backend to delete files that has been stored for longer than a week"
+                        longDesc="A simple file-sharing app using Firebase to store and deploy the app. It uses deno for the backend to delete files that has been stored for longer than a week"
+                        language={"Typescript"}
+                        tools={"Firebase"}
+                        framework={"Deno"}
+                        links={[
+                            {
+                                name: "App",
+                                link: "https://file-sharing-d8a60.firebaseapp.com/"
+                            },
+                            {
+                                name: "Github",
+                                link: "https://github.com/ThePrevailingOne/file-sharing"
+                            }
+                        ]}
+                        image={File_Sharing}
                     />
                 </Carousel.Slide>
                 <Carousel.Slide>
                     <Slide 
                         title={"Rollingstep Linkage"}
-                        shortDesc="its a game"
-                        longDesc="its a really good game"
+                        shortDesc="Research to introduce a new foot structure for legged robots that has a large surface area that resembles the rolling motion of a wheel, which is
+                        uncommon for legged robots. I designed, simulated, and optimized the model by coding it using C++ and Particle Swarm Optimization method."
+                        longDesc="This research aims to find the optimal geometric shape in a walking robot
+                        mechanism design using legs that are made to resemble the rolling motion of a
+                        wheel in part of its steps to obtain the best constant speed and stepping pattern. In the end, we made a simple 4 bar linkage using 3D printing, which resembles rolling motion has been designed, manufactured, and tested. The design is proven to be capable of walking smoothly across flat, level terrain. However, the current model is not capable of walking on
+                        dirt because the dynamo is not sufficiently powerful to overcome the friction from the ground."
+                        language={"C++"}
+                        tools={"Dev C++"}
+                        links={[
+                            {
+                                name: "Pitch Video",
+                                link: "https://www.youtube.com/watch?v=FxcZaMDNjMw&ab_channel=festivalsainsbudaya"
+                            },
+                            {
+                                name: "Research Paper",
+                                link: "https://drive.google.com/file/d/1I-DvZQ7KZbNlQUhOxusSEn2PhdHeZGOm/view"
+                            }
+                        ]}
+                        image={Rollingstep}
                     />
                 </Carousel.Slide>
                 <Carousel.Slide>
@@ -207,8 +240,15 @@ const Projects: React.FC<{}> = () => {
                         tools={"Kaggle"}
                         links={[
                             {
-                                name: "Github",
-                                link: "https://github.com/erickj04/LimitedMove"
+                                name: "Notebook",
+                                link: "https://drive.google.com/file/d/1UcKsmgOFub0nbRjBWrxuCKv4AqNT3Vek/view"
+                            },
+                            {
+                                name: "Pitch Video",
+                                link: "https://drive.google.com/file/d/14CuHfHpGxgeuej1SNfNZcBRdgkpX12Iv/view"
+                            }, {
+                                name: "Presentation",
+                                link: "https://docs.google.com/presentation/d/1rouQCeZ3oYJ_b3TsdvYcrWVb6fuO4gEK/edit?usp=sharing&ouid=111436335955625337743&rtpof=true&sd=true"
                             }
                         ]}
                         image={PCA}
