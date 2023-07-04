@@ -14,6 +14,7 @@ import {
 import { motion } from 'framer-motion'; 
 import './Skills.css';
 
+
 function CircularProgressWithLabel(
     props: CircularProgressProps & { value: number },
   ) {
