@@ -5,11 +5,6 @@ import NAV from '../../statics/Nav';
 import {
     AppBar,
     Toolbar,
-    Typography,
-    IconButton,
-    Menu,
-    MenuItem,
-    Button,
   } from '@mui/material';
 import './Navbar.css';
 

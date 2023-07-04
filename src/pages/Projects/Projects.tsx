@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Carousel } from '@mantine/carousel';
 import './Projects.css';
-import Skills from "../../components/Skills/Skills";
 import Profile from '../../statics/images/Gmail-Icon.svg';
 import { motion } from 'framer-motion';
 import { createStyles, getStylesRef } from '@mantine/core';
