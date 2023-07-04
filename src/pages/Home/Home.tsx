@@ -36,28 +36,27 @@ const Home: React.FC<{}> = () => {
     return (
         <div className='Home'>
             <div className='home-header'>
-                <Avatar 
-                    alt="my-picture" 
-                    src={profile} 
-                    sx={{ width: 200, height: 200 }}
+                <h1>Hi, I'm Erick</h1>
+                <img 
+                    alt="loading..." 
+                    src={"https://media.tenor.com/Dr5sZCODJ50AAAAi/mochi-mochi-hello-grey-cat-mochi-mochi.gif"} 
                 />
                 <TypeAnimation className='name' cursor={false} 
                     sequence={[
-                        "Erick Jovan Muljadi"
+                        "Check out my website!"
                     ]} 
                     speed={60}/>
                 <TypeAnimation className='slogan' sequence={[
-                    "one",
+                    "Hello! I am a compsci student",
                     1000,
-                    "two",
+                    "Hello! I am a sushi lover",
                     1000,
-                    "three",
+                    "Hello! I like playing chess",
                     1000,
-                    "four",
+                    "Hello! I like playing badminton",
                     1000,
-                    "five",
-                    1000
                 ]}
+                speed={60}
                 repeat={Infinity}/>
             </div>
             <div className='contacts'>
