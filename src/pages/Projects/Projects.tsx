@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Carousel } from '@mantine/carousel';
 import './Projects.css';
-import Profile from '../../statics/images/Gmail-Icon.svg';
+import PCA from '../../statics/images/PCA.png';
+import Limited_Move from '../../statics/images/Limited-Move.png'
+import Cybercision from '../../statics/images/Cybercision.png'
 import { motion } from 'framer-motion';
 import { createStyles, getStylesRef } from '@mantine/core';
 import { Modal } from '@mui/material';
@@ -46,7 +48,7 @@ const Slide: React.FC<SlideInterface> =
     const handleClose = () => setOpen(false);
 
     return (
-        <div>
+        <div className="awd">
             <motion.div 
                 className="slider-container"
                 whileHover={{
@@ -55,7 +57,7 @@ const Slide: React.FC<SlideInterface> =
                 onClick={handleOpen}
             >
                 <div className="slider-title">{props.title}</div>
-                <img alt={props.image} src={props.image} width={150} />
+                <img alt={props.image} src={props.image} width={300} />
                 <div className="slider-description-min">
                     <div className="slider-left-min">
                         {props.shortDesc}
@@ -88,7 +90,7 @@ const Slide: React.FC<SlideInterface> =
                     whileHover={{ scale: 1.05 }}
                 >
                     <div className="slider-title">{props.title}</div>
-                    <img alt={Profile} src={Profile} width={150} />
+                    <img alt={props.image} src={props.image} width={400} />
                     <div className="slider-description">
                         <div className="slider-left">
                             {props.longDesc}
@@ -132,7 +134,6 @@ const Projects: React.FC<{}> = () => {
       return (
         <div className="Projects">
           <div className="projects-header">My Projects</div>
-          <div>
             <Carousel
                 className="carousel"
                 withIndicators
@@ -149,7 +150,7 @@ const Projects: React.FC<{}> = () => {
                 <Carousel.Slide>
                     <Slide 
                         title={"Cybercision"}
-                        shortDesc={"A puzzle/minigame game with visual novel elements and story."}
+                        shortDesc={"A puzzle/minigame game with visual novel elements and story. The player will use their logical and finesse skills to perform cybernetic surgery on a grab bag of wacky patients and customers to experience the daily life of Firth in the rain drenched cyberpunk setting of Monsoon City."}
                         longDesc={"A puzzle/minigame game with visual novel elements and story. The player will use their logical and finesse skills to perform cybernetic surgery on a grab bag of wacky patients and customers to experience the daily life of Firth in the rain drenched cyberpunk setting of Monsoon City."}
                         language={"C#"}
                         tools={"Git | Unity"}
@@ -163,14 +164,24 @@ const Projects: React.FC<{}> = () => {
                                 link: "https://engineereng.itch.io/cybercision"
                             }
                         ]}
-                        image={Profile}
+                        image={Cybercision}
                     />
                 </Carousel.Slide>
                 <Carousel.Slide>
                     <Slide 
                         title={"Limited Move"}
-                        shortDesc="its a game"
-                        longDesc="its a really good game"
+                        shortDesc="A personal 2D puzzle game where you can create your own level in creative mode or solve puzzles in campaign mode using mainly React.js."
+                        longDesc="A personal 2D puzzle game where you can create your own level in creative mode or solve puzzles in campaign mode using mainly React.js. The player will use their logical thinking to strategize a way to finish the puzzle."
+                        language={"HTML | CSS | Javascript"}
+                        tools={"Git"}
+                        framework={"React | Styled-components"}
+                        links={[
+                            {
+                                name: "Github",
+                                link: "https://github.com/erickj04/LimitedMove"
+                            }
+                        ]}
+                        image={Limited_Move}
                     />
                 </Carousel.Slide>
                 <Carousel.Slide>
@@ -190,12 +201,20 @@ const Projects: React.FC<{}> = () => {
                 <Carousel.Slide>
                     <Slide 
                         title={"Water Index Prediction"}
-                        shortDesc="its a game"
-                        longDesc="its a really good game"
+                        shortDesc="Created a prediction model for the Pacific Conference on Artificial Intelligence Case Competition which predicts the water index of a region using geographical coordinates and satellite images."
+                        longDesc="We built a prediction model using geographical and social data, including latitude, longitude, area code, wealth, and number of houses per cluster. By incorporating satellite images as a training tool and using Random Forests, Extra Trees, and CatBoost techniques, our model accurately forecasts water quality in a specific region. Our efforts align with a UN Sustainable Development Goal on clean water access, and we achieved the highest coefficient of determination score (0.76087) in the BizInnovate competition."
+                        language={"Python"}
+                        tools={"Kaggle"}
+                        links={[
+                            {
+                                name: "Github",
+                                link: "https://github.com/erickj04/LimitedMove"
+                            }
+                        ]}
+                        image={PCA}
                     />
                 </Carousel.Slide>
             </Carousel>
-          </div>
         </div>
     )
 }
