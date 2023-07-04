@@ -1,13 +1,16 @@
 import React from 'react';
 import Profile from '../../statics/images/my-picture.jpeg';
-import { Avatar } from '@mui/material';
+import { Avatar, Button } from '@mui/material';
 import './About_Me.css';
 import Education from '../../components/Education/Education';
 import Skills from '../../components/Skills/Skills';
+import Contact_Me from '../../components/Contact_Me/Contact_Me';
+import Snowfall from 'react-snowfall';
 
 const About_Me: React.FC<{}> = () => {
     return (
         <div className='About_me'>
+            <Snowfall />
             <div className='about_me-header'>
                 <Avatar 
                     alt="my-picture"  
@@ -15,9 +18,13 @@ const About_Me: React.FC<{}> = () => {
                     sx={{ width: 200, height: 200 }}
                 />
                 <div className='description-container'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <div>
+                        A second-year Computer Science student at UBC Vancouver with strong interests in Software Engineering and Game Development. Suffice to say I like learning new things and making cool projects.
+                    </div>
+                    <div>Have any ideas?</div>
                 </div>
             </div>
+            <Button href='https://drive.google.com/file/d/1nAfbiCC6thK5aT79lB5E9W8VJ0DUFt61/view?usp=sharing'><h1>Click for my Resume</h1></Button>
             <div className='content'>
                 <Skills />
                 <Education />
