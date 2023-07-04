@@ -20,7 +20,7 @@ function CircularProgressWithLabel(
   ) {
     return (
       <Box sx={{ position: 'relative', display: 'inline-flex' }}>
-        <CircularProgress variant="determinate" {...props} />
+        <CircularProgress color="success" variant="determinate" {...props} />
         <Box
           sx={{
             top: 0,
@@ -36,7 +36,7 @@ function CircularProgressWithLabel(
           <Typography
             variant="caption"
             component="div"
-            color="text.secondary"
+            color="white"
           >{`${Math.round(props.value)}%`}</Typography>
         </Box>
       </Box>
@@ -102,12 +102,12 @@ const Skills: React.FC<{}> = () => {
                     <Collapse in={isFirstOpen} timeout="auto" unmountOnExit className='box-list'>
                         <List className='box-list'>
                            <LanguageItem name={"C++"} mastery={90} />
+                           <LanguageItem name={"Typescript"} mastery={95} />
                            <LanguageItem name={"Javascript"} mastery={95} />
                            <LanguageItem name={"C#"} mastery={85} />
                            <LanguageItem name={"HTML & CSS"} mastery={88} />
                            <LanguageItem name={"Java"} mastery={75} />
                            <LanguageItem name={"Python"} mastery={65} />
-                           <LanguageItem name={"Typescript"} mastery={90} />
                         </List>
                     </Collapse>
                 </ListItemButton>
