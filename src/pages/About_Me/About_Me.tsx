@@ -1,5 +1,5 @@
 import React from 'react';
-import Profile from '../../statics/images/Profile-Picture.jpg';
+import Profile from '../../statics/images/my-picture.jpeg';
 import { Avatar } from '@mui/material';
 import './About_Me.css';
 import Education from '../../components/Education/Education';
