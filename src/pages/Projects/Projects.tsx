@@ -9,6 +9,7 @@ import Rollingstep from '../../statics/images/Rollingstep.png'
 import { motion } from 'framer-motion';
 import { createStyles, getStylesRef } from '@mantine/core';
 import { Modal } from '@mui/material';
+import background from '../../statics/images/projects-bg.jpg';
 
 interface Link {
     link: string,
@@ -131,11 +132,17 @@ const Slide: React.FC<SlideInterface> =
 }
 
 const Projects: React.FC<{}> = () => {
-
+    
       const { classes } = useStyles();
       return (
-        <div className="Projects">
+        <div className="Projects" style={{ 
+            backgroundImage: `url(${background})` 
+          }}>
           <div className="projects-header">My Projects</div>
+          <motion.div
+                transition={{duration: 2}}
+                initial={{opacity: 0}}
+                animate={{opacity: 1}}>
             <Carousel
                 className="carousel"
                 withIndicators
@@ -152,8 +159,8 @@ const Projects: React.FC<{}> = () => {
                 <Carousel.Slide>
                     <Slide 
                         title={"Cybercision"}
-                        shortDesc={"A puzzle/minigame game with visual novel elements and story. The player will use their logical and finesse skills to perform cybernetic surgery on a grab bag of wacky patients and customers to experience the daily life of Firth in the rain drenched cyberpunk setting of Monsoon City."}
-                        longDesc={"A puzzle/minigame game with visual novel elements and story. The player will use their logical and finesse skills to perform cybernetic surgery on a grab bag of wacky patients and customers to experience the daily life of Firth in the rain drenched cyberpunk setting of Monsoon City."}
+                        shortDesc={"A puzzle/minigame game with visual novel elements and story. The game won audience choice award and best audio."}
+                        longDesc={"A puzzle/minigame game with visual novel elements and story. The player will use their logical and finesse skills to perform cybernetic surgery on a grab bag of wacky patients and customers to experience the daily life of Firth in the rain drenched cyberpunk setting of Monsoon City. The game won audience choice award and best audio."}
                         language={"C#"}
                         tools={"Git | Unity"}
                         links={[
@@ -255,6 +262,7 @@ const Projects: React.FC<{}> = () => {
                     />
                 </Carousel.Slide>
             </Carousel>
+            </motion.div>
         </div>
     )
 }

@@ -64,7 +64,7 @@ const Home: React.FC<{}> = () => {
                     },
                     modes: {
                     push: {
-                        quantity: 4
+                        quantity: 2
                     },
                     repulse: {
                         distance: 200,
@@ -93,7 +93,7 @@ const Home: React.FC<{}> = () => {
                         default: "bounce"
                     },
                     random: false,
-                    speed: 1,
+                    speed: 5,
                     straight: false
                     },
                     number: {
@@ -101,7 +101,7 @@ const Home: React.FC<{}> = () => {
                         enable: true,
                         area: 800
                     },
-                    value: 80
+                    value: 40
                     },
                     opacity: {
                     value: 0.3

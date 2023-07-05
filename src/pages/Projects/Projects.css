@@ -5,11 +5,11 @@
     gap: 5vw;
     padding-top: 12vh;
     height: 100vh;
-    background-color: lightblue;
 }
 
 .projects-header {
-    font-size: 3vw;
+    font-size: 5vw;
+    font-weight: bold;
 }
 
 .awd {
@@ -19,7 +19,8 @@
 
 .slider-container {
     padding: 40px;
-    background-color: lightcoral;
+    border: 10px solid black;
+    background-color: grey;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +35,8 @@
 }
 
 .carousel {
-    border: 2px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
     width: 90vw;
 }
 

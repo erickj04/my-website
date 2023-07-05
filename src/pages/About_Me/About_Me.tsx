@@ -5,12 +5,10 @@ import './About_Me.css';
 import Education from '../../components/Education/Education';
 import Skills from '../../components/Skills/Skills';
 import Contact_Me from '../../components/Contact_Me/Contact_Me';
-import Snowfall from 'react-snowfall';
 
 const About_Me: React.FC<{}> = () => {
     return (
         <div className='About_me'>
-            <Snowfall />
             <div className='about_me-header'>
                 <Avatar 
                     alt="my-picture"  
@@ -24,7 +22,7 @@ const About_Me: React.FC<{}> = () => {
                     <div>Have any ideas?</div>
                 </div>
             </div>
-            <Button href='https://drive.google.com/file/d/1nAfbiCC6thK5aT79lB5E9W8VJ0DUFt61/view?usp=sharing'><h1>Click for my Resume</h1></Button>
+            <Button href='https://drive.google.com/file/d/1nAfbiCC6thK5aT79lB5E9W8VJ0DUFt61/view?usp=sharing'><h1>Click here for my Resume</h1></Button>
             <div className='content'>
                 <Skills />
                 <Education />
