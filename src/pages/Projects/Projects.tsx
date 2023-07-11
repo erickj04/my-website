@@ -10,6 +10,7 @@ import { motion } from 'framer-motion';
 import { createStyles, getStylesRef } from '@mantine/core';
 import { Modal } from '@mui/material';
 import background from '../../statics/images/projects-bg.jpg';
+import { Card } from '@mui/material';
 
 interface Link {
     link: string,
@@ -52,6 +53,7 @@ const Slide: React.FC<SlideInterface> =
 
     return (
         <div className="awd">
+            {/* <Card> */}
             <motion.div 
                 className="slider-container"
                 whileHover={{
@@ -60,7 +62,7 @@ const Slide: React.FC<SlideInterface> =
                 onClick={handleOpen}
             >
                 <div className="slider-title">{props.title}</div>
-                <img alt={props.image} src={props.image} width={300} />
+                <img alt={props.image} src={props.image} width={300} className="slide-image"/>
                 <div className="slider-description-min">
                     <div className="slider-left-min">
                         {props.shortDesc}
@@ -79,7 +81,9 @@ const Slide: React.FC<SlideInterface> =
                         }
                     </div>
                 </div>
+                
             </motion.div>
+            {/* </Card> */}
             <Modal 
             open={open}
             onClose={handleClose}
@@ -93,7 +97,7 @@ const Slide: React.FC<SlideInterface> =
                     whileHover={{ scale: 1.05 }}
                 >
                     <div className="slider-title">{props.title}</div>
-                    <img alt={props.image} src={props.image} width={400} />
+                    <img alt={props.image} src={props.image} width={400} className="slide-image"/>
                     <div className="slider-description">
                         <div className="slider-left">
                             {props.longDesc}
@@ -140,7 +144,7 @@ const Projects: React.FC<{}> = () => {
           }}>
           <div className="projects-header">My Projects</div>
           <motion.div
-                transition={{duration: 2}}
+                transition={{duration: 1}}
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}>
             <Carousel
@@ -242,7 +246,7 @@ const Projects: React.FC<{}> = () => {
                     <Slide 
                         title={"Water Index Prediction"}
                         shortDesc="Created a prediction model for the Pacific Conference on Artificial Intelligence Case Competition which predicts the water index of a region using geographical coordinates and satellite images."
-                        longDesc="We built a prediction model using geographical and social data, including latitude, longitude, area code, wealth, and number of houses per cluster. By incorporating satellite images as a training tool and using Random Forests, Extra Trees, and CatBoost techniques, our model accurately forecasts water quality in a specific region. Our efforts align with a UN Sustainable Development Goal on clean water access, and we achieved the highest coefficient of determination score (0.76087) in the BizInnovate competition."
+                        longDesc="Built a prediction model using geographical and social data, including latitude, longitude, area code, wealth, and number of houses per cluster. By incorporating satellite images as a training tool and using Random Forests, Extra Trees, and CatBoost techniques, our model accurately forecasts water quality in a specific region. Our efforts align with a UN Sustainable Development Goal on clean water access, and we achieved the highest coefficient of determination score (0.76087) in the BizInnovate competition."
                         language={"Python"}
                         tools={"Kaggle"}
                         links={[

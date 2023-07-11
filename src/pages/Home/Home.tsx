@@ -93,7 +93,7 @@ const Home: React.FC<{}> = () => {
                         default: "bounce"
                     },
                     random: false,
-                    speed: 5,
+                    speed: 2,
                     straight: false
                     },
                     number: {
@@ -137,6 +137,10 @@ const Home: React.FC<{}> = () => {
                     1000,
                     "Hello! I like playing badminton",
                     1000,
+                    "Hello! I like playing Starcraft II",
+                    1000,
+                    "Hello! I like playing Indomie",
+                    1000
                 ]}
                 speed={60}
                 repeat={Infinity}/>
