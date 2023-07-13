@@ -31,3 +31,15 @@
     font-weight: bold;
     font-size: 1000;
 }
+
+.select-timeline {
+    font-size: 1.5vw;
+}
+
+.selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    width: 100%;
+}

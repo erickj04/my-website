@@ -60,27 +60,30 @@ const Timelines: React.FC<{}> = () => {
         <div className='Timeline'>
           <Snowfalls />
           <div className='header'>My Timeline</div>
-          <div className='checkbox'>
-            <FormControlLabel
-              control={
-                <Checkbox 
-                  checked={experience}
-                  onChange={handleChangeExperience}
-                  sx={{ '& .MuiSvgIcon-root': { fontSize: 35 } }}
-                />
-              }
-              label="Experience"
-            />
-            <FormControlLabel
-              control={
-                <Checkbox 
-                  checked={awards}
-                  onChange={handleChangeAwards}
-                  sx={{ '& .MuiSvgIcon-root': { fontSize: 35 } }}
-                />
-              }
-              label="Awards"
-            />
+          <div className='selection'>
+            <div className='select-timeline'>Select Timeline Content</div>
+            <div className='checkbox'>
+              <FormControlLabel
+                control={
+                  <Checkbox 
+                    checked={experience}
+                    onChange={handleChangeExperience}
+                    sx={{ '& .MuiSvgIcon-root': { fontSize: 35 } }}
+                  />
+                }
+                label="Experience"
+              />
+              <FormControlLabel
+                control={
+                  <Checkbox 
+                    checked={awards}
+                    onChange={handleChangeAwards}
+                    sx={{ '& .MuiSvgIcon-root': { fontSize: 35 } }}
+                  />
+                }
+                label="Awards"
+              />
+            </div>
           </div>
           <Timeline position="alternate">
             <Item 
