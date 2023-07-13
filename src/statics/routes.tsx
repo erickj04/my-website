@@ -1,7 +1,7 @@
 const ROUTES = {
     HOME: '/',
     ABOUTME: '/about_me',
-    EXPERIENCES: '/experiences',
+    TIMELINE: '/timeline',
     PROJECTS: '/projects'
 }
 

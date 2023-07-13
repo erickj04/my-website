@@ -11,8 +11,8 @@ const NAV = [
         REF: ROUTES.ABOUTME,
     },
     {
-        TITLE: PAGES.EXPERIENCES,
-        REF: ROUTES.EXPERIENCES,
+        TITLE: PAGES.TIMELINE,
+        REF: ROUTES.TIMELINE,
     },
     {
         TITLE: PAGES.PROJECTS,

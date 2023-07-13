@@ -1,10 +1,11 @@
-.Experience{
+.Timeline{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12vw;
+    gap: 8vw;
     padding-top: 12vh;
     background-color: rgb(189, 224, 236);
+    min-height: 100vh;
 }
 
 .header {
@@ -12,10 +13,21 @@
     font-weight: bold;
 }
 
-.experience-box {
+.timeline-box {
     display: flex;
     flex-direction: column;
     /* background-color: #86d6d8; */
     /* border: 5px solid black; */
     width: 50vw;
+}
+
+.checkbox {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 1000;
 }

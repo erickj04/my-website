@@ -1,7 +1,7 @@
 const PAGES = {
     HOME: 'Home',
     ABOUTME: 'About Me',
-    EXPERIENCES: 'Experience',
+    TIMELINE: 'TIMELINE',
     PROJECTS: 'Projects'
 }
 
