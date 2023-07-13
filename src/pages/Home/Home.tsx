@@ -11,7 +11,6 @@ import { Engine } from 'tsparticles-engine';
 
 const Home: React.FC<{}> = () => {
     const particlesInit = async (main : Engine) => {
-        console.log(main);
         await loadFull(main);
       };
     const contacts = CONTACT_LINKS.map(({ICON, REF}) => {
