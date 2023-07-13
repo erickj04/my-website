@@ -4,7 +4,7 @@
     align-items: center;
     gap: 8vw;
     padding-bottom: 3vw;
-    padding-top: 7vw;
+    padding-top: 8vw;
 }
 
 .about_me-header {
@@ -27,4 +27,17 @@
 .content {
     display: flex;
     gap: 5vw;
+}
+
+.about_me-desc {
+    font-size: 1.25vw
+}
+
+.profile {
+    font-size: 100vw;
+}
+
+.resume-button {
+    font-size: 2vw;
+    font-weight: bold;
 }

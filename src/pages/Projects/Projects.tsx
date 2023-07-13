@@ -49,6 +49,10 @@ const Slide: React.FC<SlideInterface> =
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+    
+    const closedSlide = {
+        width:"18vw",
+    }
 
     return (
         <div className="awd">
@@ -60,7 +64,7 @@ const Slide: React.FC<SlideInterface> =
                 onClick={handleOpen}
             >
                 <div className="slider-title">{props.title}</div>
-                <img alt={props.image} src={props.image} width={300} className="slide-image"/>
+                <img alt={props.image} src={props.image} style={closedSlide} className="slide-image"/>
                 <div className="slider-description-min">
                     <div className="slider-left-min">
                         {props.shortDesc}

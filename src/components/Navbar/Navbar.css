@@ -20,6 +20,7 @@
 	text-transform: uppercase;
 	align-items: center;
 	gap: 4vw;
+	font-size: 1.25vw;
 }
 
 .nav-links{
@@ -32,7 +33,3 @@
 	color: blue;
 	font-weight: bold;
 }
-
-.logo svg path{
-	fill: green !important;
-  }
