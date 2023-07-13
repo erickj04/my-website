@@ -8,7 +8,6 @@ import {
     List,
     CircularProgressProps,
     CircularProgress,
-    ListItem
  } from '@mui/material';
 import { 
     ExpandMore
@@ -72,16 +71,12 @@ const LanguageItem: React.FC<{name: string, mastery?: number}> = ({name, mastery
 const Education: React.FC<{}> = () => {
     const [isFirstOpen, setIsFirstOpen] = useState(false);
     const [isSecondOpen, setIsSecondOpen] = useState(false);
-    const [isThirdOpen, setIsThirdOpen] = useState(false);
 
     const handleClickFirst = () => {
         setIsFirstOpen(!isFirstOpen);
     }
     const handleClickSecond = () => {
         setIsSecondOpen(!isSecondOpen);
-    }
-    const handleClickThird = () => {
-        setIsThirdOpen(!isThirdOpen);
     }
 
     return (

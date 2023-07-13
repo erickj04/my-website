@@ -10,8 +10,6 @@ import {
  } from '@mui/lab';
 import Snowfalls from 'react-snowfall';
 import { List } from '@mui/material';
-import Profile from '../../statics/images/my-picture.jpeg';
-import { useInView } from "react-intersection-observer";
 
 
 const Experience: React.FC<{}> = () => {

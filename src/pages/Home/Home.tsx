@@ -1,6 +1,4 @@
 import React from 'react';
-import { Avatar} from '@mui/material';
-import profile from "../../statics/images/Profile-Picture.jpg";
 import { TypeAnimation } from 'react-type-animation';
 import CONTACT_LINKS from '../../statics/Links';
 import { motion } from 'framer-motion';
@@ -139,7 +137,7 @@ const Home: React.FC<{}> = () => {
                     1000,
                     "Hello! I like playing Starcraft II",
                     1000,
-                    "Hello! I like playing Indomie",
+                    "Hello! I like eating Indomie",
                     1000
                 ]}
                 speed={60}

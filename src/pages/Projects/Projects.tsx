@@ -10,7 +10,6 @@ import { motion } from 'framer-motion';
 import { createStyles, getStylesRef } from '@mantine/core';
 import { Modal } from '@mui/material';
 import background from '../../statics/images/projects-bg.jpg';
-import { Card } from '@mui/material';
 
 interface Link {
     link: string,
@@ -53,7 +52,6 @@ const Slide: React.FC<SlideInterface> =
 
     return (
         <div className="awd">
-            {/* <Card> */}
             <motion.div 
                 className="slider-container"
                 whileHover={{
@@ -81,7 +79,7 @@ const Slide: React.FC<SlideInterface> =
                         }
                     </div>
                 </div>
-                
+
             </motion.div>
             {/* </Card> */}
             <Modal 

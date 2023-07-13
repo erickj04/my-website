@@ -4,7 +4,6 @@ import { Avatar, Button } from '@mui/material';
 import './About_Me.css';
 import Education from '../../components/Education/Education';
 import Skills from '../../components/Skills/Skills';
-import Contact_Me from '../../components/Contact_Me/Contact_Me';
 
 const About_Me: React.FC<{}> = () => {
     return (
