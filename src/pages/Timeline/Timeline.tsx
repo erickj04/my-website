@@ -21,7 +21,6 @@ interface ItemProps {
 }
 
 const Item: React.FC<ItemProps> = ({...props}) => {
-  console.log(props.show);
   return (
     <>
       {props.show && (
