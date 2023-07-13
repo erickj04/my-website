@@ -130,7 +130,7 @@ const Timelines: React.FC<{}> = () => {
             />
             <Item 
               date="Apr 2023 - Present"
-              title="UBC Visual Coginition Lab"
+              title="UBC Visual Cognition Lab"
               position="Co-pilot in the coding team"
               description="Work in a team of software developers to create a website using React and MongoDB"
               show={experience}
