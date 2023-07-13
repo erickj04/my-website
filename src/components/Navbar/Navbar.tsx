@@ -50,7 +50,7 @@ const Navbar: React.FC<{}> = () => {
             <div className="navbar-menu">
                 <AppBar position="sticky" sx={{ bgcolor: "white"}}> 
                     <Toolbar className="navbar-toolbar">
-                        <motion.svg width="4vw" viewBox="0 0 1640.000000 2360.000000"
+                        <motion.svg width="3.5vw" viewBox="0 0 1640.000000 2360.000000"
     preserveAspectRatio="xMidYMid meet"
     variants={svgVariants}
     initial="hidden"
