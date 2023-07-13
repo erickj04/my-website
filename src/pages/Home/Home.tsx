@@ -115,10 +115,11 @@ const Home: React.FC<{}> = () => {
                 }}
             />
             <div className='home-header'>
-                <h1>Hi, I'm Erick Jovan Muljadi</h1>
+                <div className="intro">Hi, I'm Erick Jovan Muljadi</div>
                 <img 
                     alt="loading..." 
-                    src={"https://media.tenor.com/Dr5sZCODJ50AAAAi/mochi-mochi-hello-grey-cat-mochi-mochi.gif"} 
+                    src={"https://media.tenor.com/Dr5sZCODJ50AAAAi/mochi-mochi-hello-grey-cat-mochi-mochi.gif"}
+                    className='waving-cat'
                 />
                 <TypeAnimation className='name' cursor={false} 
                     sequence={[
