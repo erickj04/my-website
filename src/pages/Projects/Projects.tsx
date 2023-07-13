@@ -9,7 +9,6 @@ import Rollingstep from '../../statics/images/Rollingstep.png'
 import { motion } from 'framer-motion';
 import { createStyles, getStylesRef } from '@mantine/core';
 import { Modal } from '@mui/material';
-import background from '../../statics/images/projects-bg.jpg';
 
 interface Link {
     link: string,
@@ -141,23 +140,23 @@ const Projects: React.FC<{}> = () => {
     
       const { classes } = useStyles();
       return (
-        <div className="Projects" style={{ 
-            backgroundImage: `url(${background})` 
-          }}>
+        <div className="Projects" >
           <div className="projects-header">My Projects</div>
-          <motion.div
+          <div className="mid">
+            <div className="carousel-border" />
+            <motion.div
                 transition={{duration: 1}}
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}>
             <Carousel
                 className="carousel"
                 withIndicators
-                slideSize="33.333333%"
+                slideSize="31.5%"
                 slideGap="md"
                 loop
                 align="center"
                 breakpoints={[
-                  { maxWidth: 'md', slideSize: '33.333333%' },
+                  { maxWidth: 'md', slideSize: '31.5%' },
                   { maxWidth: 'sm', slideSize: '100%', slideGap: 0 },
                 ]}
                 classNames={classes}
@@ -269,6 +268,8 @@ const Projects: React.FC<{}> = () => {
                 </Carousel.Slide>
             </Carousel>
             </motion.div>
+            <div className="carousel-border" />
+          </div>
         </div>
     )
 }
