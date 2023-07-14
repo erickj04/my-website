@@ -23,7 +23,7 @@
 .slider-container {
     backdrop-filter: blur(10px) brightness(120%);
     padding: 40px;
-    border: 1vw solid black;
+    border: 0.5vw solid black;
     background-color: grey;
     display: flex;
     flex-direction: column;
