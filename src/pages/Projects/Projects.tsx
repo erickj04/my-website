@@ -84,7 +84,6 @@ const Slide: React.FC<SlideInterface> =
                 </div>
 
             </motion.div>
-            {/* </Card> */}
             <Modal 
             open={open}
             onClose={handleClose}
