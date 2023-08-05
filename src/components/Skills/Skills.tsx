@@ -36,7 +36,7 @@ function CircularProgressWithLabel(
           <Typography
             variant="caption"
             component="div"
-            color="white"
+            color="black"
           >{`${Math.round(props.value)}%`}</Typography>
         </Box>
       </Box>
@@ -123,7 +123,6 @@ const Skills: React.FC<{}> = () => {
                     <Collapse in={isSecondOpen} timeout="auto" unmountOnExit className='box-list'>
                         <List className='box-list'>
                             <LanguageItem name={"React"} />
-                            <LanguageItem name={"Styled-Components"} />
                             <LanguageItem name={"Node JS"} />
                             <LanguageItem name={"Redux"} />
                         </List>

@@ -4,12 +4,12 @@
 	right: 0;
 	left: 0;
 	z-index: 1000;
-	height: auto;
+	height: 10vh;
 }
 
 .navbar-menu {
 	display: block;
-	height: auto;
+	height: 10vh;
 }
 
 .navbar-toolbar {

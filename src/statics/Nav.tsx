@@ -11,12 +11,12 @@ const NAV = [
         REF: ROUTES.ABOUTME,
     },
     {
-        TITLE: PAGES.TIMELINE,
-        REF: ROUTES.TIMELINE,
-    },
-    {
         TITLE: PAGES.PROJECTS,
         REF: ROUTES.PROJECTS,
+    },
+    {
+        TITLE: PAGES.TIMELINE,
+        REF: ROUTES.TIMELINE,
     },
 ]
 

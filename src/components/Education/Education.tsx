@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './Education.css';
 import {
     ListItemButton,
     Collapse,
@@ -34,7 +33,7 @@ function CircularProgressWithLabel(
           <Typography
             variant="caption"
             component="div"
-            color="white"
+            color="black"
           >{`${Math.round(props.value)}%`}</Typography>
         </Box>
       </Box>

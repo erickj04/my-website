@@ -1,43 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import CONTACT_LINKS from '../../statics/Links';
-import { motion } from 'framer-motion';
 import './Home.css';
 // @ts-ignore
 import Particles from "react-tsparticles";
 import { loadFull } from 'tsparticles';
 import { Engine } from 'tsparticles-engine';
-
+import Loading from '../../components/Loading/Loading';
 
 const Home: React.FC<{}> = () => {
     const particlesInit = async (main : Engine) => {
         await loadFull(main);
       };
-    const contacts = CONTACT_LINKS.map(({ICON, REF}) => {
-        return (
-            <React.Fragment>
-                <motion.a href={REF}>
-                    <motion.img
-                        whileHover={{
-                            scale: 1.1,
-                            y: -10,
-                            transition: {
-                                repeatDelay: 0.3,
-                                repeat: Infinity,
-                                repeatType: "reverse",
-                                type: "spring",
-                            }
-                        }}
-                        alt={ICON} 
-                        src={ICON} 
-                        style={{ width: 50, height: 50 }}
-                    />
-                </motion.a>
-            </React.Fragment>
-        )
-    })
+    const [loading, setLoading] = useState(false);
+    useEffect(() => {
+        setLoading(true);
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+        setTimeout(() => {
+            setLoading(false);
+        }, 1100);
+    }, []);
 
     return (
+        <div>
+            {loading 
+            ? 
+            <Loading bgcolor='white' color='black'/>
+            :
         <div className='Home'>
             <Particles id="tsparticles"
                 init={particlesInit}
@@ -90,7 +78,7 @@ const Home: React.FC<{}> = () => {
                         default: "bounce"
                     },
                     random: false,
-                    speed: 2,
+                    speed: 3.5,
                     straight: false
                     },
                     number: {
@@ -98,7 +86,7 @@ const Home: React.FC<{}> = () => {
                         enable: true,
                         area: 800
                     },
-                    value: 30
+                    value: 20
                     },
                     opacity: {
                     value: 0.3
@@ -107,7 +95,7 @@ const Home: React.FC<{}> = () => {
                     type: "circle"
                     },
                     size: {
-                    value: { min: 3, max: 5 }
+                    value: { min: 3, max: 8 }
                     }
                 },
                 detectRetina: true
@@ -115,13 +103,13 @@ const Home: React.FC<{}> = () => {
                 }}
             />
             <div className='home-header'>
-                <div className="intro">Hi, I'm Erick Jovan Muljadi</div>
-                <img 
+                <div className="name">Hi, I'm Erick Jovan Muljadi</div>
+                {/* <img 
                     alt="loading..." 
                     src={"https://media.tenor.com/Dr5sZCODJ50AAAAi/mochi-mochi-hello-grey-cat-mochi-mochi.gif"}
                     className='waving-cat'
-                />
-                <TypeAnimation className='name' cursor={false} 
+                /> */}
+                <TypeAnimation className='intro' cursor={false} 
                     sequence={[
                         "Check out my website!"
                     ]} 
@@ -143,12 +131,8 @@ const Home: React.FC<{}> = () => {
                 speed={60}
                 repeat={Infinity}/>
             </div>
-            <div className='contacts'>
-                <div className='contacts-title'>CONTACTS</div>   
-                <div className='contact-links'> 
-                    {contacts}
-                </div> 
-            </div>
+        </div>
+        }
         </div>
     )
 }
