@@ -140,8 +140,8 @@ const Slide: React.FC<SlideInterface> =
 const Projects: React.FC<{}> = () => {
     const [loading, setLoading] = useState(false);
     useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         setLoading(true);
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         setTimeout(() => {
             setLoading(false);
         }, 1100);
