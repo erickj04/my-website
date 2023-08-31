@@ -41,7 +41,7 @@ const About_Me: React.FC<{}> = () => {
                         <div className='about_me-desc'>Have any ideas?</div>
                     </div>
                 </div>
-                <Button href='https://drive.google.com/file/d/1nAfbiCC6thK5aT79lB5E9W8VJ0DUFt61/view?usp=sharing'><div className='resume-button'>Click here for my Resume</div></Button>
+                <Button href='https://drive.google.com/file/d/1Cvcz2jSJYgOw-O8TGb0SXOXQm3seFXRq/view?usp=sharing'><div className='resume-button'>Click here for my Resume</div></Button>
                 <div className='content'>
                     <Skills />
                     <Education />
