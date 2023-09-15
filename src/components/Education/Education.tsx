@@ -99,6 +99,15 @@ const Education: React.FC<{}> = () => {
                             <LanguageItem name={"CPSC 110: Computation, Programs, and Programming"}></LanguageItem>
                             <LanguageItem name={"DSCI 110: Introduction to Data Science"}></LanguageItem>
                         </List>
+                        <LanguageItem name={"This Winter Session Taking: "} />
+                        <List>
+                            <LanguageItem name={"STAT 251: Elementary Statistics"}></LanguageItem>
+                            <LanguageItem name={"CPSC 213: Introduction to Computer Systems"}></LanguageItem>
+                            <LanguageItem name={"CPSC 221: Basic Algorithms and Data Structures"}></LanguageItem>
+                            <LanguageItem name={"CPSC 310: Introduction to Software Engineering"}></LanguageItem>
+                            <LanguageItem name={"CPSC 313: Computer Hardware and Operating Systems"}></LanguageItem>
+                            <LanguageItem name={"CPSC 320: Intermediate Algorithm Design and Analysis"}></LanguageItem>
+                        </List>
                         <LanguageItem name={"OVERALL GPA"} mastery={89.1} />
                         <LanguageItem name={"Full Scholarship from Beasiswa Indonesia Maju"}></LanguageItem>
                     </List>

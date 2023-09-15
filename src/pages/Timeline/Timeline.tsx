@@ -159,7 +159,7 @@ const Timelines: React.FC<{}> = () => {
                   show={experience}
                 />
               <TimelineItem>
-                <TimelineOppositeContent color="text.secondary">
+                <TimelineOppositeContent color="text.secondary" style={{color: 'white'}}>
                   Coming Soon
                 </TimelineOppositeContent>
                 <TimelineSeparator>

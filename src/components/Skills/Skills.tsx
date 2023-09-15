@@ -125,6 +125,8 @@ const Skills: React.FC<{}> = () => {
                             <LanguageItem name={"React"} />
                             <LanguageItem name={"Node JS"} />
                             <LanguageItem name={"Redux"} />
+                            <LanguageItem name={"Tailwind CSS"} />
+                            <LanguageItem name={"AWS"} />
                         </List>
                     </Collapse>
                 </ListItemButton>
